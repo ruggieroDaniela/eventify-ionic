@@ -1,0 +1,28 @@
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 2px solid #ccc; 
+    justify-content: space-between;
+    height: 60px;
+  }
+  
+  .label {
+    font-family: 'SF-Pro-Text-Semibold', sans-serif;
+  }
+  
+  .placeholder {
+    flex: 1;
+    color: gray;
+    background-color: white;
+    font-family: 'SF-Pro-Text-Regular', sans-serif;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .required {
+    color: red; 
+  }
+  

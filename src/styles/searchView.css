@@ -1,0 +1,47 @@
+.search-view-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.events-content-container {
+    margin-top: 16px;
+}
+
+.users-content-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.no-results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    text-align: center;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.hint-text {
+    color: gray;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 16px;
+}
+
+.no-results-text {
+    color: black;
+    font-family: 'SF-Pro-Text-Regular';
+    font-size: 16px;
+}
+
+
+

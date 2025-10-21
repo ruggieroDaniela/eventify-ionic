@@ -1,0 +1,103 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #D9D9D9;
+}
+
+.auth-header {
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  
+}
+
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-content {
+  flex: 1;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: #D9D9D9;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 24px;
+}
+
+.auth-button-container{
+  margin-top: auto;
+  padding: 16px 20px;
+} 
+
+.forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    background-color: transparent;
+}
+
+.forgot-password-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+
+.forgot-password-container p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.custom-alert {
+  --background: white;
+  --height: auto;
+  --max-height: 90%;
+  --border-radius: 16px;
+}
+
+.custom-alert .alert-wrapper {
+  border-radius: 16px;
+  min-width: 300px;
+}
+
+.custom-alert .alert-head {
+  padding-top: 20px;
+}
+
+.custom-alert .alert-message {
+  color: #666;
+  font-family: 'SF-Pro-Text-Regular';
+}
+
+.custom-alert .alert-button {
+  color: #050F71;
+  font-family: 'SF-Pro-Text-Semibold';
+} 
