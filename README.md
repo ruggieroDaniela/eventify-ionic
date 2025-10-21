@@ -61,7 +61,7 @@ ionic-app/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/valeraruggierotesisucv/ionic-app.git
+   git clone https://github.com/ruggieroDaniela/eventify-ionic.git
    cd ionic-app
    ```
 
