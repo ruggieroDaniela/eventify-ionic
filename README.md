@@ -1,114 +1,111 @@
 # Eventify - Ionic React
 
-## Descripción
+## Description
 
-Eventify es una plataforma móvil diseñada para la gestión de eventos e interacción entre usuarios. Incluye funcionalidades esenciales como la administración de eventos, la conexión entre usuarios y características sociales, tales como seguidores, notificaciones y comentarios.
+Eventify is a mobile platform designed for event management and user interaction. It includes essential functionalities such as event administration, user connection, and social features like followers, notifications, and comments.
 
-## Demostración
+## Demo
 
-[![Eventify Demo](https://crnarpvpafbywvdzfukp.supabase.co/storage/v1/object/public/DONT%20DELETE//VideosThumbnail.png)](https://youtu.be/5qaMUsTg-lM)
+[![Eventify Demo](/eventifyThumbnail.png)](https://youtu.be/5qaMUsTg-lM)
 
-*Haz clic en la imagen para ver la demostración en YouTube*
+*Click on the image to watch the demo on YouTube*
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **React**: Biblioteca para construir interfaces de usuario
-- **TypeScript**: Lenguaje de programación que añade tipado estático a JavaScript
-- **Capacitor**: Plataforma para convertir aplicaciones web en aplicaciones nativas
-- **Supabase**: Plataforma de backend como servicio (BaaS) para autenticación, base de datos y almacenamiento
-- **i18next**: Solución de internacionalización
-- **Cypress - Vitest - React Testing Library**: Bibliotecas para el desarrollo de pruebas unitarias y de integración
+- **React**: Library for building user interfaces
+- **TypeScript**: Programming language that adds static typing to JavaScript
+- **Capacitor**: Platform for converting web applications into native applications
+- **Supabase**: Backend-as-a-service (BaaS) platform for authentication, database, and storage
+- **i18next**: Internationalization solution
+- **Cypress - Vitest - React Testing Library**: Libraries for unit and integration testing development
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 ionic-app/
 ├── src/
-│   ├── App.tsx                # Componente principal de la aplicación
-│   ├── assets/                # Imágenes, fuentes y otros recursos estáticos
-│   ├── components/            # Componentes reutilizables
-│   ├── views/                 # Vistas principales de la aplicación
-│   ├── contexts/              # Contextos de React
-│   │   ├── AuthContext.tsx    # Contexto de autenticación
-│   │   └── PushNotificationsContext.tsx # Proveedor de notificaciones
-│   ├── hooks/                 # Hooks personalizados
-│   │   ├── useAudioRecorder.tsx # Hook para grabación de audio
-│   │   ├── useCurrentLocation.tsx # Hook para geolocalización
-│   │   ├── useImagePicker.tsx # Hook para selección de imágenes
-│   │   └── useFilePicker.tsx # Hook para selección de música
-│   ├── models/                # Interfaces y tipos de datos
-│   ├── navigation/            # Configuración de navegación
-│   ├── i18n/                  # Configuración de internacionalización
-│   ├── services/              # Servicios 
-│   │   ├── storage.ts         # Servicios de almacenamiento
-│   ├── styles/                # Estilos globales y utilidades CSS
-│   ├── theme/                 # Configuración de temas
-│   └── utils/                 # Utilidades y helpers
-├── public/                    # Archivos públicos estáticos
-├── capacitor.config.ts        # Configuración de Capacitor
-├── ionic.config.json          # Configuración de Ionic
-└── package.json               # Dependencias y scripts
+│   ├── App.tsx                # Main application component
+│   ├── assets/                # Images, fonts, and other static resources
+│   ├── components/            # Reusable components
+│   ├── views/                 # Main application views
+│   ├── contexts/              # React Contexts
+│   │   ├── AuthContext.tsx    # Authentication Context
+│   │   └── PushNotificationsContext.tsx # Notifications Provider
+│   ├── hooks/                 # Custom hooks
+│   │   ├── useAudioRecorder.tsx # Hook for audio recording
+│   │   ├── useCurrentLocation.tsx # Hook for geolocation
+│   │   ├── useImagePicker.tsx # Hook for image selection
+│   │   └── useFilePicker.tsx # Hook for music selection
+│   ├── models/                # Interfaces and data types
+│   ├── navigation/            # Navigation configuration
+│   ├── i18n/                  # Internationalization configuration
+│   ├── services/              # Services
+│   │   ├── storage.ts         # Storage services
+│   ├── styles/                # Global styles and CSS utilities
+│   ├── theme/                 # Theme configuration
+│   └── utils/                 # Utilities and helpers
+├── public/                    # Static public files
+├── capacitor.config.ts        # Capacitor configuration
+├── ionic.config.json          # Ionic configuration
+└── package.json               # Dependencies and scripts
 ```
 
-## Requisitos Previos
+## Prerequisites
 
-- Node.js (v16 o superior)
-- npm o yarn
+- Node.js (v16 o higher)
+- npm or yarn
 - Ionic CLI
-- Cuenta en Supabase
+- Supabase account
 
-## Configuración del Entorno
+## Environment Setup
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    git clone https://github.com/valeraruggierotesisucv/ionic-app.git
    cd ionic-app
    ```
 
-2. Instala las dependencias:
+2. Install dependencies:
    ```bash
    npm install
-   # o
+   # or
    yarn install
    ```
 
-3. Configura las variables de entorno:
-   - Crea un archivo `.env` en la raíz del proyecto
-   - Añade las siguientes variables:
+3. Configure environment variables:
+   - Create an `.env` file in the project root
+   - Add the following variables:
      ```
-     VITE_SUPABASE_URL=tu_url_de_supabase
-     VITE_SUPABASE_ANON_KEY=tu_clave_anonima_de_supabase
-     VITE_API_URL=tu_api_url
+     VITE_SUPABASE_URL=your_supabase_url
+     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+     VITE_API_URL=your_api_url
      ```
 
-## Ejecución de la Aplicación
+## Running the Application
 
-### Desarrollo Web
+### Web Development
 
-Para iniciar la aplicación en modo desarrollo web:
+To start the application in web development mode:
 
 ```bash
 ionic serve
 ```
 
-### Desarrollo en Dispositivos
+### Device Development
 
-Para ejecutar en Android:
+To run on Android:
 
 ```bash
 ionic capacitor run android -l --external
 ```
 
-## Despliegue
+## Deployment
 
-### Generación de APK
+### APK Generation
 
-Para generar archivos de instalación:
+To generate installation files:
 
 ```bash
 ionic capacitor build android 
 ```
 
-## Contacto
-
-Para preguntas o sugerencias, por favor contacta a valeraruggierotesisucv@gmail.com
